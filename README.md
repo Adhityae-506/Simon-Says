@@ -1,4 +1,4 @@
-# 🎮 Simon Says – Memory Game (Hard Mode)
+# 🎮 Simon Says – Memory Game 
 
 A modern, interactive **Simon Says memory game** built using **HTML, CSS, and JavaScript**.  
 This version features a **Hard Mode** where the color sequence is **never replayed**, pushing players to rely entirely on memory and focus.
