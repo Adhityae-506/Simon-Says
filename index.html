@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Simon Says — Memory Game</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Audiowide&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="bg-orbs">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <header class="siteHeader">
+    <div class="brand">
+      <h1 class="title"><span>Simon</span> Says</h1>
+      <p class="tag">Test your memory. Beat the chain.</p>
+    </div>
+
+    <nav class="top-controls" aria-label="game controls">
+      <div class="scoreboard" aria-hidden="false">
+        <div class="score-block">
+          <div class="label">Level</div>
+          <div id="level" class="value">0</div>
+        </div>
+        <div class="score-block">
+          <div class="label">High</div>
+          <div id="highscore" class="value">—</div>
+        </div>
+      </div>
+
+      <div class="buttons-row">
+        <button class="btn action start" type="button">Start</button>
+        <button class="btn action restart" type="button">Restart</button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section class="game-area" aria-label="Simon game board">
+      <div class="board-card">
+        <div class="board-grid" aria-hidden="true">
+          <button class="pad pad-top-left" aria-label="green pad"></button>
+          <button class="pad pad-top-right" aria-label="red pad"></button>
+          <button class="pad pad-bottom-left" aria-label="yellow pad"></button>
+          <button class="pad pad-bottom-right" aria-label="blue pad"></button>
+        </div>
+
+        <div class="center-hub">
+          <div class="hub-display">
+            <div class="hub-level">Level <span id="hub-level">0</span></div>
+          </div>
+          <div class="hub-note">Watch. Remember. Repeat.</div>
+        </div>
+      </div>
+    </section>
+
+    <aside class="panel">
+      <div class="card instructions">
+        <h2 class="card-title">How to Play</h2>
+        <ol class="instruction-list">
+          <li>
+            Press <strong>Start</strong> — Simon flashes one color. Tap the same
+            button to match it.
+          </li>
+          <li>
+            Next, Simon shows <strong>one new color only</strong>. The previous
+            ones won’t be shown again.
+          </li>
+          <li>
+            Repeat the <strong>entire sequence from memory</strong>, in the exact
+            order — old colors first, new one last.
+          </li>
+          <li>
+            Each successful round adds another color to remember. One mistake and
+            it’s <strong>game over</strong>.
+          </li>
+          <li>
+            No hints. No rewinds. Just focus and see how far your memory can go.
+          </li>
+        </ol>
+        <p class="small">
+          Tip: Play with sound on — the rhythm helps more than you think 🎵
+        </p>
+      </div>
+
+      <div class="card tips">
+        <h3 class="card-title">Pro Tips</h3>
+        <ul>
+          <li>Say the colors out loud — it really helps lock them in.</li>
+          <li>Follow the rhythm instead of rushing your taps.</li>
+          <li>Pause, breathe, then tap. Calm beats speed.</li>
+        </ul>
+      </div>
+    </aside>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>Made with ♥ by Adhitya</p>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
